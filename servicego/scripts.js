@@ -4,7 +4,15 @@ let createAccountContainer = document.getElementById("create-account");
 let createAccountLink = document.getElementById("create-account-link");
 let accountPageContainer = document.getElementById("account-page");
 let bookingContainer = document.getElementById("booking-panel-link");
+let sidePanel = document.getElementById("side-panel");
 
+function showSidePanel() {
+  sidePanel.style.display = "block"
+} 
+
+function closeSidePanel() {
+  sidePanel.style.display = "none"
+} 
 
 createAccountLink.onclick = function(){
   loginContainer.style.display = "none"
@@ -12,13 +20,12 @@ createAccountLink.onclick = function(){
 }
 
 loginLink.onclick = function(){
-  createAccountContainer.style.display = "none"
+  createAccountContainer.style.display = "none";
   loginContainer.style.display = "block";
 }
 
 function showAccountPage() {
   accountPageContainer.style.display = "block";
-
 }
 
 function closeAccountPage() {

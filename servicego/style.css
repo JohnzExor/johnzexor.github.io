@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -13,6 +14,7 @@ nav {
     width: 100%;
     height: 50px;
     background: white;
+    position: fixed;
 }
 
 nav label {
@@ -35,11 +37,53 @@ nav li a {
     color: black;
 }
 
+.nav-options-mobile {
+    display: none;
+}
+
+.nav-options-mobile a, h1{
+    padding: 10px;
+    text-align: center;
+    color: black;
+    display: grid;
+}
+
+.nav-options-mobile a {
+    width: 40%;
+    margin: auto;
+}
+
+.nav-options-mobile a:hover {
+    color: white;
+    font-weight: bold;
+    background: darkcyan;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.sidebtn {
+    display: none;
+}
+
 nav li a:hover {
     background: rgb(105, 134, 134);
     border-radius: 3px;
     color: white;
     transition: 0.5s;
+}
+
+.page-template {
+    background: white;
+    width: 430px;
+    margin: auto;
+    padding: 40px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 1);
+    position: fixed;
+    margin-top: 450px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .create-account {
@@ -48,21 +92,6 @@ nav li a:hover {
 
 .login {
     display: block;
-}
-
-.account-page {
-    background: white;
-    width: 430px;
-    margin: auto;
-    margin-top: 180px;
-    padding: 40px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 1);
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .account-page h3 {
@@ -191,10 +220,12 @@ nav li a:hover {
 
 .contact-details-container {
     display: flex;
+    max-width: 700px;
+    margin: auto;
 }
 
 .contact-details-person, .customer-support {
-    padding: 20px;
+    margin: 15px 20px;
 }
 
 .contact-details .title {
@@ -206,19 +237,6 @@ nav li a:hover {
 }
 
 .booking-container {
-    text-align: center;
-    background: white;
-    width: 430px;
-    margin: auto;
-    margin-top: 180px;
-    padding: 40px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 1);
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: none;
 }
 
@@ -301,15 +319,15 @@ nav li a:hover {
 @media only screen and (max-width: 767px) {
 
     nav ul {
-        padding: 14px 17px ;
+        padding: 14px 17px;
     }
 
-    .account-page {
-        width: 100%;
-        height: 100%;
+    .sidebtn {
+        display: block;
+        float: right;
     }
 
-    .create-page {
+    .page-template {
         width: 100%;
         height: 100%;
     }

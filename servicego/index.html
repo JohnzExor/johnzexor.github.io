@@ -18,16 +18,29 @@
                 <a href="#contact">Contact</a>
                 <a href="#" onclick="showAccountPage()" class="active">Account</a>
             </li>
+            <div class="sidebtn">
+                <i class="fa-solid fa-bars" onclick="showSidePanel()"></i>
+            </div>
         </ul>
     </nav>
+    <div class="nav-options-mobile page-template" id="side-panel">
+        <i class="fa fa-times exit-btn" onclick="closeSidePanel()"></i>
+        <h1>ServiceGo</h1>
+        <li>
+            <a href="#services" onclick="closeSidePanel()">Services</a>
+            <a href="#about" onclick="closeSidePanel()">About</a>
+            <a href="#contact" onclick="closeSidePanel()">Contact</a>
+            <a href="#" onclick="showAccountPage(), closeSidePanel() ">Account</a>
+        </li>
+    </div>
 
     <div class="background">
         <div class="image"></div>    
     </div>
 
     <div class="account-page" id="account-page">
-        <i class="fa fa-times exit-btn" onclick="closeAccountPage()"></i>
-        <div class="login" id="login">
+        <div class="login page-template" id="login">
+            <i class="fa fa-times exit-btn" onclick="closeAccountPage()"></i>
             <div class="details">
             <h3>Login</h3>
 
@@ -47,7 +60,9 @@
 
         </div>
         
-        <div class="create-account" id="create-account">
+        <div class="create-account page-template" id="create-account">
+
+            <i class="fa fa-times exit-btn" onclick="closeAccountPage()"></i>
             <h3>Create an account</h3>
 
             <form id="create-account-form" method="post">
@@ -63,10 +78,11 @@
                 <input class="user-input" type="password" name="password" id="password" placeholder="juan2345" required>
                 <button class="submit-btn" type="Craate">Create Account</button>
             </form>
+
                 <p class="options">Already have an account? <a href="#" id="login-link"><span>Login</span></a></p>
         </div>
     </div>
-    <div class="booking-container" id="booking-panel-link">
+    <div class="booking-container page-template" id="booking-panel-link">
         <h2>"service_name"</h2>
         <div class="booking-details">
             <button class="submit-btn" onclick="bookingComplete()">Book</button>
@@ -184,6 +200,7 @@
             
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
