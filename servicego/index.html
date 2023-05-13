@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f0c0338da3.js" crossorigin="anonymous"></script>
+    <title>ServiceGo</title>
+</head>
+<body>
+    <nav class="navigation-bar">
+        <ul>
+            <label for="logo" >ServiceGo</label>
+            <li>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#" onclick="showAccountPage()" class="active">Account</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="background">
+        <div class="image"></div>    
+    </div>
+
+    <div class="account-page" id="account-page">
+        <i class="fa fa-times exit-btn" onclick="closeAccountPage()"></i>
+        <div class="login" id="login">
+            <div class="details">
+            <h3>Login</h3>
+
+            <form id="login-form" method="post">
+                <label for="email">Email</label>
+                <input class="user-input" type="email" name="email" id="email" placeholder="delacruzjuan@email.com" required>
+                <label for="password">Password</label>
+                <input class="user-input" type="password" name="password" id="password" placeholder="juan2345" required>
+                <button class="submit-btn" type="submit">Login</button>
+            </form>
+
+            </div>
+            <div class="options">
+            <p>Dont have account? <a href="#" id="create-account-link"><span>Create an Account</span></a>
+            <p><a href="">Forgot Password?</a></p>
+            </div>
+
+        </div>
+        
+        <div class="create-account" id="create-account">
+            <h3>Create an account</h3>
+
+            <form id="create-account-form" method="post">
+                <label for="first-name">First Name</label>
+                <input class="user-input" type="first-name" name="first-name" id="first-name" placeholder="Juan" required>
+                <label for="last-name">Last Name</label>
+                <input class="user-input" type="text" name="last-name" id="last-name" placeholder="Delacruz" required>
+                <label for="age">Age</label>
+                <input class="user-input" type="date" name="age" id="age" required>
+                <label for="password">Password</label>
+                <input class="user-input" type="password" name="password" id="password" placeholder="juan2345" required>
+                <label for="password">Confirm Password</label>
+                <input class="user-input" type="password" name="password" id="password" placeholder="juan2345" required>
+                <button class="submit-btn" type="Craate">Create Account</button>
+            </form>
+                <p class="options">Already have an account? <a href="#" id="login-link"><span>Login</span></a></p>
+        </div>
+    </div>
+    <div class="booking-container" id="booking-panel-link">
+        <h2>"service_name"</h2>
+        <div class="booking-details">
+            <button class="submit-btn" onclick="bookingComplete()">Book</button>
+        </div>
+    </div>
+    <div class="title-service-background" id="about">
+        <div class="title-details">
+            <h1>Welcome to ServiceGo!</h1>
+            <p>Our goal is to provide professional and instant services 
+                to our customers. If you need services right at your doorsteps, 
+                ServiceGo will be ready to go!</p>
+        </div>
+    </div>
+    <div class="services-container" id="services">
+        <div class="service1">
+            <div class="service-details">
+                <h2>Barbers</h2>
+                <p>product description</p>
+                <button onclick="showBookingDetails()">VISIT</button>
+            </div>
+        </div>
+        <div class="service2">
+            <div class="service-details">
+                <h2>House Cleaning</h2>
+                <p>product description</p>
+                <button>VISIT</button>
+            </div>
+        </div>
+        <div class="service3">
+            <div class="service-details">
+                <h2>Massage Therapist</h2>
+                <p>product description</p>
+                <button>VISIT</button>
+            </div>
+        </div>
+        <div class="service4">
+            <div class="service-details">
+                <h2>Babysitter</h2>
+                <p>product description</p>
+                <button>VISIT</button>
+            </div>
+        </div>
+        <div class="service5">
+            <div class="service-details">
+                <h2>Laundry</h2>
+                <p>product description</p>
+                <button>VISIT</button>
+            </div>
+        </div>
+        <div class="service6">
+            <div class="service-details">
+                <h2>Manicure & Pedicure</h2>
+                <p>product description</p>
+                <button>VISIT</button>
+            </div>
+        </div>
+        <div class="service7">
+            <div class="service-details">
+                <h2>Electrician</h2>
+                <p>product description</p>
+                <button>VISIT</button>
+            </div>
+        </div>
+        <div class="service8">
+            <div class="service-details">
+                <h2>Plumber</h2>
+                <p>product description</p>
+                <button>VISIT</button>
+            </div>
+        </div>
+        <div class="service9">
+            <div class="service-details">
+                <h2>Carpenter</h2>
+                <p>product description</p>
+                <button>VISIT</button>
+            </div>
+        </div>
+        <div class="service10">
+            <div class="service-details">
+                <h2>Mechanic</h2>
+                <p>product description</p>
+                <button>VISIT</button>
+            </div>
+        </div>
+        <div class="service11">
+            <div class="service-details">
+                <h2>Caregiver</h2>
+                <p>product description</p>
+                <button>VISIT</button>
+            </div>
+        </div>
+    </div>
+    <div class="contact-container" id="contact">
+        <div class="contact-details">
+            <div class="contact-title">
+                <h1>Get in touch</h1>
+                <p>Want to get in touch? We'd love to hear from you. 
+                    Here's how you can reach us..</p>
+            </div>
+                <div class="contact-details-container">
+                    <div class="contact-details-person">
+                        <p class="title">Talk to Sales</p>
+                        <p class="description">Interested in ServiceGo software? 
+                            Just pick up the phone to chat with a member of our sales team.</p>
+                        <p class="number">+63123456789</p>
+                    </div>
+                        <div class="customer-support">
+                        <p class="title">Contact Customer Support</p>
+                        <p class="description">Sometimes you need a little help from 
+                            your friends. Or a ServiceGo support rep. Don't worry... we're here 
+                            to help you.
+                        </p>
+                    </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

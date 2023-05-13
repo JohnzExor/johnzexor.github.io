@@ -1,0 +1,341 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background: white;
+}
+
+nav label {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+nav ul {
+    padding: 14px 100px ;
+}
+
+nav li {
+    float: right;
+    display: block;
+}
+
+nav li a {
+    padding: 20px;
+    color: black;
+}
+
+nav li a:hover {
+    background: rgb(105, 134, 134);
+    border-radius: 3px;
+    color: white;
+    transition: 0.5s;
+}
+
+.create-account {
+    display: none;
+}
+
+.login {
+    display: block;
+}
+
+.account-page {
+    background: white;
+    width: 430px;
+    margin: auto;
+    margin-top: 180px;
+    padding: 40px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 1);
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.account-page h3 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.account-page label {
+    font-weight: 500;
+}
+
+.exit-btn {
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+.exit-btn:hover {
+    color: darkcyan;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: darkcyan;
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    margin: 6px;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    transition: 0.5s;
+    color: black;
+    border-color: darkcyan;
+}
+
+.user-input {
+    width: 100%;
+    height: 40px;
+    border-style: solid;
+    border-radius: 6px;
+    margin: 6px;
+    padding: 0 20px 0 20px;
+    color: gray;
+}
+
+.options {
+    text-align: center;
+    padding: 30px;
+}
+
+.options span {
+    color: black;
+    font-weight: bold;
+}
+
+.options a {
+    color: black;
+    font-weight: 500;
+}
+
+.service-details {
+    text-align: center;
+    padding-top: 140px;
+}
+
+.service-details h2 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: -1px;
+}
+
+.service-details p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.service-details button {
+    padding: 10px;
+    background: transparent;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.service-details button:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.title-details {
+    padding: 300px 0 0 100px;
+    width: 500px;
+}
+
+.title-details h1 {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
+
+.title-details {
+    color: white;
+    text-align: center;
+}
+
+.contact-container {
+    margin: 60px;
+}
+
+.contact-title {
+    margin: 30px;
+}
+
+.contact-details {
+    text-align: center;
+}
+
+.contact-details-container {
+    display: flex;
+}
+
+.contact-details-person, .customer-support {
+    padding: 20px;
+}
+
+.contact-details .title {
+    font-weight: bold;
+}
+
+.contact-details-person .number {
+    color: cadetblue;
+}
+
+.booking-container {
+    text-align: center;
+    background: white;
+    width: 430px;
+    margin: auto;
+    margin-top: 180px;
+    padding: 40px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 1);
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.booking-details {
+    padding-top: 30px;
+}
+
+.title-service-background {
+    background-image: url("./images/background.jpg");
+    width: 100%;
+    height: 900px;
+}
+
+.service1 {
+    background-image: url("./images/image1.jpg");
+    width: 100%;
+    height: 440px;
+}
+
+.service2 {
+    background-image: url("./images/image2.jpg");
+    width: 100%;
+    height: 440px;
+}
+
+.service3 {
+    background-image: url("./images/image3.jpg");
+    width: 100%;
+    height: 440px;
+}
+
+.service4 {
+    background-image: url("./images/image4.jpg");
+    width: 100%;
+    height: 440px;
+}
+
+.service5 {
+    background-image: url("./images/image5.jpg");
+    width: 100%;
+    height: 440px;
+}
+
+.service6 {
+    background-image: url("./images/image6.jpg");
+    width: 100%;
+    height: 440px;
+}
+
+.service7 {
+    background-image: url("./images/image7.jpg");
+    width: 100%;
+    height: 440px;
+}
+
+.service8 {
+    background-image: url("./images/image8.jpg");
+    width: 100%;
+    height: 440px;
+}
+
+.service9 {
+    background-image: url("./images/image9.jpg");
+    width: 100%;
+    height: 440px;
+}
+
+.service10 {
+    background-image: url("./images/image10.jpg");
+    width: 100%;
+    height: 440px;
+}
+
+.service11 {
+    background-image: url("./images/image11.jpg");
+    width: 100%;
+    height: 440px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    nav ul {
+        padding: 14px 17px ;
+    }
+
+    .account-page {
+        width: 100%;
+        height: 100%;
+    }
+
+    .create-page {
+        width: 100%;
+        height: 100%;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    .title-details {
+        margin: auto;
+        padding: 350px 25px 0 25px;
+        width: auto;
+    }
+    .title-details h1 {
+        font-size: 35px;
+        width: auto;
+    }
+
+    .title-details p {
+        font-size: 20px;
+        width: auto;
+    }
+
+    .contact-details-container {
+        display: block;
+    }
+
+}
