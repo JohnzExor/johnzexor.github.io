@@ -91,7 +91,7 @@ nav li a:hover {
 }
 
 .login {
-    display: block;
+    display: none;
 }
 
 .account-page h3 {
@@ -197,7 +197,7 @@ nav li a:hover {
 
 .title-details h1 {
     color: white;
-    font-size: 70px;
+    font-size: 65px;
     text-align: center;
 }
 
@@ -237,11 +237,34 @@ nav li a:hover {
 }
 
 .booking-container {
-    display: none;
+    text-align: center;
+    display: block;
 }
 
 .booking-details {
     padding-top: 30px;
+    text-align: center;
+}
+
+.choices-design-payment {
+    padding: 5px;
+    background: transparent;
+    border-style:groove;
+    color: black;
+    margin-top: 5px;
+    cursor: pointer;
+    width: 85px;
+    border-radius: 6px;
+}
+
+.book-choices p {
+    font-weight: bold;
+}
+
+.choices-design-payment:hover {
+    color: white;
+    background: darkcyan;
+    transition: 0.5s;
 }
 
 .title-service-background {
@@ -338,7 +361,7 @@ nav li a:hover {
 
     .title-details {
         margin: auto;
-        padding: 350px 25px 0 25px;
+        padding: 100px 25px 0 25px;
         width: auto;
     }
     .title-details h1 {
